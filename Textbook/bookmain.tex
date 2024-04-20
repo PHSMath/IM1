@@ -1,0 +1,52 @@
+\documentclass[letterpaperpaper]{book}
+\usepackage[
+		letterpaper,
+		margin=2cm,
+		%showframe
+	]{geometry}
+\setlength\parindent{0em}
+\setlength\parskip{1em}
+\raggedbottom
+
+%----------%
+% SETTINGS %
+%----------%
+
+\input{settings}
+
+%----------%
+% DOCUMENT %
+%----------%
+
+\begin{document}
+
+% Cover
+\input{figures/cover/cover}
+
+% Rights, lefts, etc.
+\makeatletter
+\def\input@path{{./pre_content/}}
+\makeatother
+\input{rights}
+
+% Contents?
+HERE BE TABLE
+%\tableofcontents
+\newpage
+
+% Chapters
+\setcounter{chapter}{-1}
+
+% Introduction
+\makeatletter
+\def\input@path{{./units/preface/}}
+\makeatother
+\input{purpose}
+\input{about}
+
+\newpage
+
+
+\end{document}
+
+% This is a test
