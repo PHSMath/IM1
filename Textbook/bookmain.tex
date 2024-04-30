@@ -19,20 +19,18 @@
 %----------%
 
 \begin{document}
-
-% Cover
-%\input{figures/cover/cover}
-
-% Rights, lefts, etc.
 \makeatletter
 \def\input@path{{./precontent/}}
 \makeatother
+% Cover
+\input{cover}
+
+% Rights, lefts, etc.
+
 \input{rights}
 
 % Contents?
-HERE BE TABLE
-%\tableofcontents
-\newpage
+%\newpage
 
 % Chapters
 \setcounter{chapter}{-1}
@@ -43,7 +41,18 @@ HERE BE TABLE
 \makeatother
 \input{purpose}
 \input{about}
+\input{prereqs}
 
+\makeatletter
+\def\input@path{{./units/linear/}}
+\makeatother
+\input{overview}
+\input{solutions}
+\input{onestep}
+\input{twostep}
+\input{distone}
+\input{bothsides}
+\input{literal}
 \newpage
 
 
